@@ -11,7 +11,9 @@ export const useAuth = () => {
 };
 
 // Configure your backend API URL here
-const API_URL = 'http://localhost:5000/api';
+const API_URL = window.location.hostname === 'localhost' 
+  ? 'http://localhost:5000/api' 
+  : 'https://linkconnect-backend.onrender.com/api';
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);

@@ -8,7 +8,7 @@ import { Input } from '../components/ui/input';
 import { Badge } from '../components/ui/badge';
 import { Progress } from '../components/ui/progress';
 import { Separator } from '../components/ui/separator';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { profileAPI } from '../utils/api';
 import {
   Mail,
