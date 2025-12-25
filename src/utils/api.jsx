@@ -397,8 +397,8 @@
 const isProduction = window.location.hostname !== 'localhost';
 
 const API_BASE_URL = isProduction 
-  ? 'https://linkconnect-backend.onrender.com'  // YOUR RENDER URL HERE
-  : 'http://localhost:5000/api';                   // Your local laptop URL
+  ? 'https://linkconnect-backend.onrender.com/api' // <--- ADD /api HERE
+  : 'http://localhost:5000/api';                  // Your local laptop URL
 
 // Helper to get auth token
 const getAuthHeaders = () => {
